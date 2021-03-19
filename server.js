@@ -63,9 +63,9 @@ const sequelize = new Sequelize('mysql://root:root@127.0.0.1:3306/robocore');
   //   });
   // });
 
-  // MyUser.findAll().then(users => {
-  //   console.log(users)
-  // })
+  MyUser.findAll().then(users => {
+    console.log(users)
+  })
 
 // simple route
 app.get("/", (req, res) => {
