@@ -30,6 +30,43 @@ db.mongoose
     process.exit();
   });
 
+// sequelize
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('mysql://root:root@127.0.0.1:3306/robocore');
+
+// sequelize
+//   .authenticate()
+//   .then(() => {
+//     console.log('Connection has been established successfully.');
+//   })
+//   .catch(err => {
+//     console.error('Unable to connect to the database:', err);
+//   });
+
+  const MyUser = sequelize.define('myuser', {
+    firstName: {
+      type: Sequelize.STRING
+    },
+    lastName: {
+      type: Sequelize.STRING
+    }
+  });
+  
+  // Note: you need to have create and read separately as sync means it is async...
+
+  // force: true will drop the table if it already exists
+  // MyUser.sync({force: true}).then(() => {
+  //   // Table created
+  //   return MyUser.create({
+  //     firstName: 'John',
+  //     lastName: 'Hancock'
+  //   });
+  // });
+
+  // MyUser.findAll().then(users => {
+  //   console.log(users)
+  // })
+
 // simple route
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application." });
