@@ -31,8 +31,8 @@ db.mongoose
   });
 
 // sequelize
-const Sequelize = require('sequelize');
-const sequelize = new Sequelize('mysql://root:root@127.0.0.1:3306/robocore');
+// const Sequelize = require('sequelize');
+// const sequelize = new Sequelize('mysql://root:root@127.0.0.1:3306/robocore');
 
 // sequelize
 //   .authenticate()
@@ -43,14 +43,14 @@ const sequelize = new Sequelize('mysql://root:root@127.0.0.1:3306/robocore');
 //     console.error('Unable to connect to the database:', err);
 //   });
 
-  const MyUser = sequelize.define('myuser', {
-    firstName: {
-      type: Sequelize.STRING
-    },
-    lastName: {
-      type: Sequelize.STRING
-    }
-  });
+  // const MyUser = sequelize.define('myuser', {
+  //   firstName: {
+  //     type: Sequelize.STRING
+  //   },
+  //   lastName: {
+  //     type: Sequelize.STRING
+  //   }
+  // });
   
   // Note: you need to have create and read separately as sync means it is async...
 
