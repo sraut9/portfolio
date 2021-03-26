@@ -68,9 +68,11 @@ db.mongoose
   // })
 
 // simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
-});
+// app.get("/", (req, res) => {
+//   res.json({ message: "Welcome to bezkoder application." });
+// });
+
+app.use(express.static('Angular10Client'));
 
 require("./app/routes/turorial.routes")(app);
 require("./app/routes/portfolio.routes")(app);
