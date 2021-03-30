@@ -7,11 +7,13 @@ const cheerio = require('cheerio');
 async function getData (html) {
 	//data = [];
 	const $ = await cheerio.load(html);
-	const data = $('#growth-dividend')
+	let data = $('#growth-dividend')
 				.children('p')
 				.children('small')
 				.first()
-				.text().replace('Growth: ₹ ','');
+                .text().replace('Growth: ₹ ','');
+
+                data = data.replace(',', '');
 
 	const last_price = Number(data);
 	const units = 112926.935;

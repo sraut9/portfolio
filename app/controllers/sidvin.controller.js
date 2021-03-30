@@ -5,12 +5,13 @@ var help = require("../help/getmf.nav");
 const Sidvin = db.sidvin;
 
 const url=[
-  'https://www.valueresearchonline.com/funds/114/franklin-india-bluechip-fund/?ref_plan_id=114',
-  'https://www.valueresearchonline.com/funds/219/hdfc-equity-fund/?ref_plan_id=219',
-  'https://www.valueresearchonline.com/funds/104/hdfc-top-100-fund/?ref_plan_id=104',
-  'https://www.valueresearchonline.com/funds/2886/idfc-multi-cap-fund-regular-plan/?ref_plan_id=2886',
-  'https://www.valueresearchonline.com/funds/2138/uti-mid-cap-fund-regular-plan/?ref_plan_id=2138',
-  'https://www.valueresearchonline.com/funds/2820/uti-value-opportunities-fund-regular-plan/?ref_plan_id=2820'
+  'https://www.valueresearchonline.com/funds/15748/axis-liquid-fund-direct-plan/?ref_plan_id=15748'
+  // 'https://www.valueresearchonline.com/funds/114/franklin-india-bluechip-fund/?ref_plan_id=114',
+  // 'https://www.valueresearchonline.com/funds/219/hdfc-equity-fund/?ref_plan_id=219',
+  // 'https://www.valueresearchonline.com/funds/104/hdfc-top-100-fund/?ref_plan_id=104',
+  // 'https://www.valueresearchonline.com/funds/2886/idfc-multi-cap-fund-regular-plan/?ref_plan_id=2886',
+  // 'https://www.valueresearchonline.com/funds/2138/uti-mid-cap-fund-regular-plan/?ref_plan_id=2138',
+  // 'https://www.valueresearchonline.com/funds/2820/uti-value-opportunities-fund-regular-plan/?ref_plan_id=2820'
 ];
 
 // Create and Save a new Portfolio
@@ -61,11 +62,11 @@ exports.findAll = (req, res) => {
     //     last_nav = await help.getNAV(data[i], url[i]);
     // }
       last_nav = await help.getNAV(data[0], url[0]);
-      last_nav = await help.getNAV(data[1], url[1]);
-      last_nav = await help.getNAV(data[2], url[2]);
-      last_nav = await help.getNAV(data[3], url[3]);
-      last_nav = await help.getNAV(data[4], url[4]);
-      last_nav = await help.getNAV(data[5], url[5]);
+      // last_nav = await help.getNAV(data[1], url[1]);
+      // last_nav = await help.getNAV(data[2], url[2]);
+      // last_nav = await help.getNAV(data[3], url[3]);
+      // last_nav = await help.getNAV(data[4], url[4]);
+      // last_nav = await help.getNAV(data[5], url[5]);
       //console.log("sidvin findAll 0: " + data);
       res.send(data);
     })

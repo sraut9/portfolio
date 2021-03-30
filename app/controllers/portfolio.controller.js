@@ -57,7 +57,7 @@ exports.findAll = (req, res) => {
       last_nav = await help.getNAV(data[1], url[1]);
       last_nav = await help.getNAV(data[2], url[2]);
       // console.log("last_nav: " + last_nav);
-      //console.log("portfolio findAll 0: " + data);
+      console.log("portfolio findAll 0: " + data);
       res.send(data);
     })
     .catch(err => {

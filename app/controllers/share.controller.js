@@ -6,16 +6,16 @@ const Share = db.share;
 
 const url=[
   'https://money.rediff.com/companies/Can-Fin-Homes-Ltd/14080002',
-  'https://money.rediff.com/companies/Graphite-India-Ltd/13580002',
+  // 'https://money.rediff.com/companies/Graphite-India-Ltd/13580002',
   'https://money.rediff.com/companies/Hatsun-Agro-Products-Ltd/11050105',
   'https://money.rediff.com/companies/Hdfc-Bank-Ltd/14030055',
   'https://money.rediff.com/companies/Marico-Ltd/11120039',
   'https://money.rediff.com/companies/Maruti-Suzuki-India-Ltd/10520005',
-  'https://money.rediff.com/companies/Meghmani-Organics-Ltd/12120059',
-  'https://money.rediff.com/companies/Mold-Tek-Packaging-Ltd/12200107',
+  // 'https://money.rediff.com/companies/Meghmani-Organics-Ltd/12120059',
+  // 'https://money.rediff.com/companies/Mold-Tek-Packaging-Ltd/12200107',
   'https://money.rediff.com/companies/Page-Industries-Ltd/16070088',
   'https://money.rediff.com/companies/Sun-Pharmaceutical-Industries-Ltd/12540191',
-  'https://money.rediff.com/companies/Tata-Motors-Ltd/10510008',
+  // 'https://money.rediff.com/companies/Tata-Motors-Ltd/10510008',
   'https://money.rediff.com/companies/Yes-Bank-Ltd/14030144'
 ];
 
@@ -74,10 +74,10 @@ exports.findAll = (req, res) => {
       last_nav = await help.getPrice(data[5], url[5]);
       last_nav = await help.getPrice(data[6], url[6]);
       last_nav = await help.getPrice(data[7], url[7]);
-      last_nav = await help.getPrice(data[8], url[8]);
-      last_nav = await help.getPrice(data[9], url[9]);
-      last_nav = await help.getPrice(data[10], url[10]);
-      last_nav = await help.getPrice(data[11], url[11]);
+      // last_nav = await help.getPrice(data[8], url[8]);
+      // last_nav = await help.getPrice(data[9], url[9]);
+      // last_nav = await help.getPrice(data[10], url[10]);
+      // last_nav = await help.getPrice(data[11], url[11]);
       //console.log("share findAll 0: " + data);
       res.send(data);
     })
