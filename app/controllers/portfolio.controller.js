@@ -5,9 +5,9 @@ var help = require("../help/getmf.nav");
 const Portfolio = db.portfolio;
 
 const url=[
-  'https://www.valueresearchonline.com/funds/15684/axis-focused-25-fund-direct-plan/?',
   'https://www.valueresearchonline.com/funds/16324/sbi-focused-equity-fund-direct-plan/?ref_plan_id=16324',
-  'https://www.valueresearchonline.com/funds/15787/sbi-small-cap-fund-direct-plan/?ref_plan_id=15787'
+  'https://www.valueresearchonline.com/funds/15787/sbi-small-cap-fund-direct-plan/?ref_plan_id=15787',
+  'https://www.valueresearchonline.com/funds/15684/axis-focused-25-fund-direct-plan/?'
 ];
 
 // Create and Save a new Portfolio
